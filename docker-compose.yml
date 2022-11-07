@@ -1,0 +1,31 @@
+### DO NOT CHANGE SETTINGS ###
+version: "3.3" 
+
+# TODO expose configuration folder to ansible container with ansible playbook and etc?
+services:
+  ansible:
+    build:
+      context: ./dockerfiles/ansible/
+      dockerfile: Dockerfile
+    container_name: ansible_container
+    hostname: ansible_host
+    ports:
+      - 8080:8080
+    volumes:
+      - ./configuration/:/ansible/configuration
+      - ./ansible.cfg:/etc/ansible/ansible.cfg
+      - ./hosts:/etc/ansible/hosts
+    networks: 
+      internal:
+
+  test1:
+    build:
+      context: ./dockerfiles/standardhost/
+      dockerfile: Dockerfile
+    container_name: test_container_1
+    hostname: test_container_1
+    networks:
+      internal:
+
+networks: 
+  internal:
