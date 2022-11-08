@@ -1,5 +1,4 @@
 - hosts: default_container
-  remote_user: workshop
     
   tasks:
     - name: test
