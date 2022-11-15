@@ -3,23 +3,23 @@
   become: yes 
     
   tasks:
-  # Assignment 1 - Find the task at: /roles/insatllpip3/tasks/main.yml
+  # Assignment 1 - Find the task at: /roles/installpip3/tasks/main.yml
     - name: install pip3 using apt package manager module 
       import_role:
-        name: insatllpip3
-      tags: insatllpip3 
+        name: installpip3
+      tags: installpip3 
 
-  # Assignment 2 - Find the task at: /roles/insatllflask/tasks/main.yml
+  # Assignment 2 - Find the task at: /roles/installflask/tasks/main.yml
     - name: install flask using pip module
       import_role:
-        name: insatllflask
-      tags: insatllflask 
+        name: installflask
+      tags: installflask 
 
-  # Assignment 3 - Find the task at: /roles/insatllwebapp/tasks/main.yml
+  # Assignment 3 - Find the task at: /roles/installwebapp/tasks/main.yml
     - name: deploy helloworld app using copy module 
       import_role:
-        name: insatllwebapp
-      tags: insatllwebapp 
+        name: installwebapp
+      tags: installwebapp 
   
   # Assignment 4 - Find the task at: /roles/runflask/tasks/main.yml
     - name: run flask using shell module 
