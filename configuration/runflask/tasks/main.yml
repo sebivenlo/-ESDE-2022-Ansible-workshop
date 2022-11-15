@@ -10,3 +10,11 @@
 #
 - name: start flask service 
   
+# Expected output 
+#
+# TASK [runflask : start flask service] ********************************************************
+# changed: [host_4_webapp]
+#
+# Further verification 
+# 
+# Open a web browser on your machine and type http://localhost:8000 you see a hello world message.

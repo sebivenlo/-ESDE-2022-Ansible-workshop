@@ -9,3 +9,13 @@
 #
 - name: install flask
   
+# Expected output 
+#
+# TASK [installflask : install flask] **********************************************************
+# changed: [host_4_webapp]
+#
+# Further verification 
+# 
+# Logon to target ansible host  using command 'docker-compose run ansible '
+# connect to target host by typing command 'ssh workshop@host_4_webapp'( use password 'workshop')
+# run command 'which flask' with expected output  /usr/local/bin/flask

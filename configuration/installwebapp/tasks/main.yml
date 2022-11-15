@@ -9,3 +9,13 @@
 #
 - name: Deploy hello world webapp  
   
+# Expected output 
+#
+# TASK [installwebapp : copy hello world webapp] ***********************************************
+# changed: [host_4_webapp]
+#
+# Further verification 
+# 
+# Logon to target ansible host  using command 'docker-compose run ansible '
+# connect to target host by typing command 'ssh workshop@host_4_webapp'( use password 'workshop')
+# run command 'ls webapp/' with expected output  helloworld.py

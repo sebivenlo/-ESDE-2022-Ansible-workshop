@@ -8,4 +8,14 @@
 # More details about the module can be found at https://docs.ansible.com/ansible/2.9/modules/apt_module.html
 #
 - name : install pip3 
-  
+
+# Expected output 
+#
+# TASK [installpip3 : install pip3] ************************************************************
+# changed: [host_4_webapp]
+#
+# Further verification 
+# 
+# Logon to target ansible host  using command 'docker-compose run ansible '
+# connect to target host by typing command 'ssh workshop@host_4_webapp'( use password 'workshop')
+# run command 'which pip3' with expected output  /usr/bin/pip3
