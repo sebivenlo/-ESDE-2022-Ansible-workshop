@@ -22,12 +22,13 @@ services:
     build:
       context: ./dockerfiles/standardhost/
       dockerfile: Dockerfile
-    container_name: test_container_1
-    hostname: test_container_1
+    container_name: host_4_webapp
+    hostname: host_4_webapp
     ports:
       - 8000:8000
     networks:
       internal:
+    
 
 networks: 
   internal:
