@@ -1,0 +1,27 @@
+---
+
+# Software provisioning 
+- name : install pip3 
+  apt:
+    name: python3-pip
+    state: latest
+
+# Software provisioning 
+- name: install flask
+  pip: 
+    name: flask 
+    state: latest
+
+# Software deployment
+- name: copy hello world webapp  
+  copy: 
+    src: /webapp/helloworld.py
+    dest: /webapp/
+    mode: 777
+
+- name: start flask service 
+  shell: 
+    cmd: flask run --host=0.0.0.0 --port=8000 &
+  environment:
+    FLASK_APP: /webapp/helloworld.py 
+    
