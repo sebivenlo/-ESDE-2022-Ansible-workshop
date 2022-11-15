@@ -1,0 +1,11 @@
+---
+# Assignment 1 - Your first task!
+#
+# The goal of this assignment is to install pip3 on the target host. 
+# 
+# Your task is to use apt package mangaer module from anisble to achive the goal 
+#
+# More details about the module can be found at https://docs.ansible.com/ansible/2.9/modules/apt_module.html
+#
+- name : install pip3 
+  
