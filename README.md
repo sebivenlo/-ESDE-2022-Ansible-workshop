@@ -1,3 +1,3 @@
-# -ESDE-2022-Ansible-workshop
+# ESDE-2022-Ansible-workshop
 
 
