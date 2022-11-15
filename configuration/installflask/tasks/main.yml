@@ -1,0 +1,10 @@
+# Assignment 2 
+#
+# The goal of this assignment is to install flask on the target host. 
+# 
+# Your task is to use pip module from anisble to achive the goal 
+#
+# More details about the module can be found at https://docs.ansible.com/ansible/2.9/modules/pip_module.html
+#
+- name: install flask
+  
