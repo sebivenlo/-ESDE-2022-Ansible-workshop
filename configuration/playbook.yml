@@ -3,8 +3,26 @@
   become: yes 
     
   tasks:
-    - name: Install httpd on sample host
+  # Assignment 1 - Find the task at: /roles/insatllpip3/tasks/main.yml
+    - name: install pip3 using apt package manager module 
       import_role:
-        name: webserver
-      tags: webserver 
+        name: insatllpip3
+      tags: insatllpip3 
 
+  # Assignment 2 - Find the task at: /roles/insatllflask/tasks/main.yml
+    - name: install flask using pip module
+      import_role:
+        name: insatllflask
+      tags: insatllflask 
+
+  # Assignment 3 - Find the task at: /roles/insatllwebapp/tasks/main.yml
+    - name: deploy helloworld app using copy module 
+      import_role:
+        name: insatllwebapp
+      tags: insatllwebapp 
+  
+  # Assignment 4 - Find the task at: /roles/runflask/tasks/main.yml
+    - name: run flask using shell module 
+      import_role:
+        name: runflask
+      tags: runflask 
