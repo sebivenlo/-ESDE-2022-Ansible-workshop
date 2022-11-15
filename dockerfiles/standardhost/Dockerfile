@@ -13,5 +13,6 @@ RUN apt update && apt install openssh-server sudo openssh-client git -y; \
 
 EXPOSE 22
 EXPOSE 3000
+EXPOSE 8000
 
 CMD ["/usr/sbin/sshd","-D"]

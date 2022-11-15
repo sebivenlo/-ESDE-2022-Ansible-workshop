@@ -1,6 +1,10 @@
-- hosts: default_container
+---
+- hosts: all
+  become: yes 
     
   tasks:
-    - name: test
-      ansible.builtin.ping:
+    - name: Install httpd on sample host
+      import_role:
+        name: webserver
+      tags: webserver 
 

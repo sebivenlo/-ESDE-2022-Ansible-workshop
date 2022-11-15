@@ -1,2 +1,2 @@
 [default_container]
-test_container_1 ansible_connection=ssh ansible_user=workshop ansible_password=workshop
+test_container_1 ansible_connection=ssh ansible_user=workshop ansible_password=workshop ansible_sudo_pass=workshop
