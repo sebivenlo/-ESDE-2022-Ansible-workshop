@@ -1,0 +1,12 @@
+---
+# Assignment 4 - final assignment  
+#
+# The goal of this assignment is to sever the hello world app via flask 
+#
+# Your task is to use shell  module from  anisble  and run the command "flask run --host=0.0.0.0 --port=8000 &"
+# Also, you need to set enviornment variable FLASK_APP to "/webapp/helloworld.py "
+#
+# More details about the module can be found at https://docs.ansible.com/ansible/2.9/modules/shell_module.html
+#
+- name: start flask service 
+  
