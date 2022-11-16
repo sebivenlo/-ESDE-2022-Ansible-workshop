@@ -1,0 +1,5 @@
+Gemfile
+Gemfile.lock
+temp
+_site/*
+.DS_Store
